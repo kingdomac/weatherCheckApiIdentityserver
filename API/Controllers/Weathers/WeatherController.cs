@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Security.Claims;
@@ -16,7 +15,6 @@ namespace WeatherCheckApi.Controllers.Weathers
     [Route("api/weather")]
     [ApiController]
     [Authorize]
-    //[ServiceFilter(typeof(ApiKeyAuthenticationFilter))]
     public class WeatherController : ControllerBase
     {
         private readonly IWeatherRepo _weatherRepo;
@@ -36,11 +34,6 @@ namespace WeatherCheckApi.Controllers.Weathers
             _weatherApiService = weatherApiService;
         }
 
-        [HttpGet("test")]
-        public IActionResult Test()
-        {
-            return Ok("test");
-        }
 
         [HttpGet("current")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(WeatherApiDto))]

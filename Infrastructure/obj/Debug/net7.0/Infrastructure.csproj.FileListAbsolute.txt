@@ -15,3 +15,5 @@ C:\Users\USER\Desktop\c# testing\WeatherCheckApi\Infrastructure\bin\Debug\net7.0
 C:\Users\USER\Desktop\c# testing\WeatherCheckApi\Infrastructure\bin\Debug\net7.0\Domain.pdb
 C:\Users\USER\Desktop\c# testing\WeatherCheckApi\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CopyComplete
 C:\Users\USER\Desktop\c# testing\WeatherCheckApi\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache
+C:\Users\USER\Desktop\c# testing\WeatherCheckApi\Infrastructure\bin\Debug\net7.0\Application.dll
+C:\Users\USER\Desktop\c# testing\WeatherCheckApi\Infrastructure\bin\Debug\net7.0\Application.pdb

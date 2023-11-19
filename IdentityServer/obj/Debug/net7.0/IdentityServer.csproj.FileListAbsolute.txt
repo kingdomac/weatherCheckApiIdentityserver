@@ -80,3 +80,7 @@ C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0
 C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\IdentityServer4.Storage.dll
 C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\Application.dll
+C:\Users\USER\Desktop\c# testing\WeatherCheckApi\IdentityServer\bin\Debug\net7.0\Application.pdb
