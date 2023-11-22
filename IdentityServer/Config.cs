@@ -22,6 +22,7 @@ namespace IdentityServer
 
                     // no interactive user, use the clientid/secret for authentication
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                    
 
                     // secret for authentication
                     ClientSecrets =
@@ -31,10 +32,10 @@ namespace IdentityServer
 
                     // scopes that client has access to
                     AllowedScopes = { 
-                         "WeatherCheckApi", 
-                         IdentityServerConstants.StandardScopes.OpenId, 
-                         IdentityServerConstants.StandardScopes.Profile, 
-                         IdentityServerConstants.StandardScopes.Email 
+                         "WeatherCheckApi", "openid", "profile", "email"
+                         //IdentityServerConstants.StandardScopes.OpenId, 
+                         //IdentityServerConstants.StandardScopes.Profile, 
+                         //IdentityServerConstants.StandardScopes.Email 
                      }
 
                 },

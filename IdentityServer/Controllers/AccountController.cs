@@ -1,4 +1,5 @@
-﻿using IdentityServer.DTO;
+﻿using IdentityModel;
+using IdentityServer.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -36,7 +37,7 @@ namespace IdentityServer.Controllers
                 return BadRequest(new { Message = "Registration failed", Errors = errors });
             }
 
-            await _userManager.AddClaimAsync(identityUser, new Claim("email", identityUser.Email));
+            await _userManager.AddClaimAsync(identityUser, new Claim(JwtClaimTypes.Email, identityUser.Email));
 
             return Ok("Registration Success");
         }

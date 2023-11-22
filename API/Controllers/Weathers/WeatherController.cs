@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using IdentityModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -81,7 +82,7 @@ namespace WeatherCheckApi.Controllers.Weathers
             //var identityUser = await _userManager.FindByIdAsync(identityUserId ?? "");
 
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var userEmailClaim = User.FindFirst(ClaimTypes.Email)?.Value;
+            //var userEmailClaim = User.FindFirst(JwtClaimTypes.Email)?.Value;
 
 
             weatherModel.UserId = userIdClaim;

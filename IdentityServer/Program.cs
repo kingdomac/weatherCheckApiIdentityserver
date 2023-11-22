@@ -1,4 +1,5 @@
 using IdentityServer;
+using IdentityServer.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WeatherCheckApi.Infrastructure;
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<IdentityServerDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
@@ -21,7 +22,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.Password.RequireDigit = false;
     options.Password.RequireLowercase = false;
     options.Password.RequireUppercase = false;
-}).AddEntityFrameworkStores<ApplicationDbContext>()
+}).AddEntityFrameworkStores<IdentityServerDbContext>()
 .AddDefaultTokenProviders(); 
 
 builder.Services.AddIdentityServer()
