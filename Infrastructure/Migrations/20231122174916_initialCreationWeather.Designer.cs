@@ -12,8 +12,8 @@ using WeatherCheckApi.Infrastructure;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231118204129_InitalCreation")]
-    partial class InitalCreation
+    [Migration("20231122174916_initialCreationWeather")]
+    partial class initialCreationWeather
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
